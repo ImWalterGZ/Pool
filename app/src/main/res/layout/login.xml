@@ -41,10 +41,10 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="35dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/IniciarSesiónTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -59,9 +59,50 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FDF3FF"
-            android:backgroundTint="#FDF3FF">
+            android:background="@drawable/rounded_background">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <EditText
+                    android:id="@+id/nombreUserEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="10"
+                    android:hint="Nombre de usuario"
+                    android:inputType="text" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <EditText
+                    android:id="@+id/nipEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="NIP"
+                    android:inputType="numberPassword" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Button
+                    android:id="@+id/iniciarSesionButton"
+                    android:layout_width="208dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Button" />
+            </LinearLayout>
         </FrameLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

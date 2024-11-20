@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".registroUser">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            app:srcCompat="@drawable/logopool" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/IniciarSesiónTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Registrarse"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <FrameLayout
+            android:id="@+id/frameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/creaNombreUserTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/intervariablefont"
+                    android:gravity="center"
+                    android:text="Crea tu nombre de usuario"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <EditText
+                    android:id="@+id/crearNombreUserEditText"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/envelope_solid"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="Nombre de usuario"
+                    android:inputType="text"
+                    android:paddingStart="10dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/creaNipUserTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/intervariablefont"
+                    android:gravity="center"
+                    android:text="Crea tu NIP"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <EditText
+                    android:id="@+id/crearNipEditText"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/envelope_solid"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="Crea tu nip"
+                    android:inputType="text"
+                    android:paddingStart="10dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <EditText
+                    android:id="@+id/confirmarNipEditText"
+                    android:layout_width="276dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/lock_closed_solid"
+                    android:drawablePadding="12dp"
+
+                    android:ems="10"
+                    android:hint="Confirma tu NIP"
+
+                    android:inputType="numberPassword"
+                    android:paddingStart="10dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <Button
+                    android:id="@+id/iniciarSesionButton"
+                    android:layout_width="273dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Listo!" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="¿Ya tienes cuenta?" />
+
+                    <Button
+                        android:id="@+id/irACrearCuentaButton"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="Inicia sesión"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

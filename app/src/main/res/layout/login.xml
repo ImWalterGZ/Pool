@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
+    android:elevation="0dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -27,6 +28,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/intervariablefont"
             android:text="Bienvenido al"
+            android:textColor="@color/black"
             android:textSize="45dp" />
 
         <TextView
@@ -43,6 +45,16 @@
             android:layout_width="match_parent"
             android:layout_height="35dp" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            app:srcCompat="@drawable/logopool" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
         <TextView
             android:id="@+id/IniciarSesiónTextView"
             android:layout_width="wrap_content"
@@ -50,6 +62,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="Iniciar sesión"
+            android:textColor="@color/darkGray"
             android:textSize="25dp" />
 
         <Space
@@ -57,6 +70,7 @@
             android:layout_height="25dp" />
 
         <FrameLayout
+            android:id="@+id/frameContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/rounded_background">
@@ -72,12 +86,17 @@
 
                 <EditText
                     android:id="@+id/nombreUserEditText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_horizontal"
+
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/envelope_solid"
+                    android:drawablePadding="12dp"
                     android:ems="10"
                     android:hint="Nombre de usuario"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:paddingStart="10dp" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -85,12 +104,18 @@
 
                 <EditText
                     android:id="@+id/nipEditText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="276dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
+                    android:background="@drawable/custom_input"
+                    android:drawableStart="@drawable/lock_closed_solid"
+                    android:drawablePadding="12dp"
+
                     android:ems="10"
                     android:hint="NIP"
-                    android:inputType="numberPassword" />
+
+                    android:inputType="numberPassword"
+                    android:paddingStart="10dp" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -98,10 +123,42 @@
 
                 <Button
                     android:id="@+id/iniciarSesionButton"
-                    android:layout_width="208dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="273dp"
+                    android:layout_height="58dp"
                     android:layout_gravity="center"
-                    android:text="Button" />
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Listo!" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/nunca_has_chismeado" />
+
+                    <Button
+                        android:id="@+id/irACrearCuentaButton"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="comienza ya :)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>

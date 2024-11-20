@@ -24,6 +24,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, WelcomeScreen.class);
         startActivity(intent);
         finish();
-
     }
 }

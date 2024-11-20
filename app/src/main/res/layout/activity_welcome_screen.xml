@@ -90,19 +90,6 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/iniciarSesionButton"
-                    android:layout_width="273dp"
-                    android:layout_height="58dp"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="36dp"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:text="Iniciar Sesión"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/registraseButton" />
-
-                <Button
                     android:id="@+id/registraseButton"
                     android:layout_width="273dp"
                     android:layout_height="58dp"
@@ -114,6 +101,20 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.345" />
+
+                <Button
+                    android:id="@+id/irInicioSesionBtn"
+                    android:layout_width="273dp"
+                    android:layout_height="58dp"
+                    android:backgroundTint="#8703A8"
+                    android:text="Iniciar Sesion"
+                    android:textColorHint="#8703A8"
+                    android:textColorLink="#8703A8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/registraseButton"
+                    app:layout_constraintVertical_bias="0.358" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -119,11 +119,11 @@
                     android:layout_gravity="center_horizontal"
 
                     android:background="@drawable/custom_input"
-                    android:drawableStart="@drawable/envelope_solid"
+                    android:drawableStart="@drawable/lock_closed_solid"
                     android:drawablePadding="12dp"
                     android:ems="10"
                     android:hint="Crea tu nip"
-                    android:inputType="text"
+                    android:inputType="numberPassword"
                     android:paddingStart="10dp" />
 
                 <Space

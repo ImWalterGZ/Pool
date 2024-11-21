@@ -24,10 +24,19 @@ public class WelcomeScreen extends AppCompatActivity {
             return insets;
         });
         Button iniciarSesion = findViewById(R.id.irInicioSesionBtn);
+        Button registro =  findViewById(R.id.registraseButton);
         iniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(WelcomeScreen.this, Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(WelcomeScreen.this, registroUser.class);
                 startActivity(intent);
                 finish();
             }

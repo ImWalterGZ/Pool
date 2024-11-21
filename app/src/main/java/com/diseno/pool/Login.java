@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -36,6 +37,7 @@ public class Login extends AppCompatActivity {
         Button iniciarSesionButton = findViewById(R.id.iniciarSesionButton);
         TextView nombreUserEditText = findViewById(R.id.nombreUserEditText);
         TextView nipEditText = findViewById(R.id.nipEditText);
+        Button irACrearCuentaButton = findViewById(R.id.irACrearCuentaButton);
         iniciarSesionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,14 +58,24 @@ public class Login extends AppCompatActivity {
                                             finish();
                                         }else{
                                             //mensaje de error, contraseña incorrecta
+                                            Toast.makeText(Login.this, "Contraseña incorrecta", Toast.LENGTH_SHORT).show();
                                         }
+                                    } else {
+                                        //mensaje de error: no se encontro el usuario
+                                        //Log.w(TAG, "Error getting documents.", task.getException());
+                                        Toast.makeText(Login.this, "No se encontro el usuario", Toast.LENGTH_SHORT).show();
                                     }
-                                } else {
-                                    //mensaje de error: no se encontro el usuario
-                                    //Log.w(TAG, "Error getting documents.", task.getException());
                                 }
                             }
                         });
+            }
+        });
+        irACrearCuentaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, registroUser.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

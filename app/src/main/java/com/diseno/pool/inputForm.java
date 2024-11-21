@@ -102,10 +102,10 @@ public class inputForm extends AppCompatActivity {
                             .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
-                                    Toast.makeText(inputForm.this, "Chisme ingresado.", Toast.LENGTH_SHORT).show();
-//                                    Intent intent = new Intent(inputForm.this, inputForm.class);
-//                                    startActivity(intent);
-//                                    finish();
+                                    //Toast.makeText(inputForm.this, "Chisme ingresado.", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(inputForm.this, feed_principal.class);
+                                    startActivity(intent);
+                                    finish();
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {

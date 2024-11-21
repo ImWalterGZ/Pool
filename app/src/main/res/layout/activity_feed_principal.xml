@@ -33,5 +33,6 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/logoImageView"
             tools:layout_editor_absoluteX="0dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

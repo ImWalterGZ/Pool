@@ -53,7 +53,7 @@ public class Login extends AppCompatActivity {
                                         DocumentSnapshot document = task.getResult().getDocuments().get(0);
                                         String nipUsuario = document.getString("NIP");
                                         if(nipUsuario.equals(nipEditText.getText().toString())){
-                                            Intent intent = new Intent(Login.this, WelcomeScreen.class);
+                                            Intent intent = new Intent(Login.this, inputForm.class);
                                             startActivity(intent);
                                             finish();
                                         }else{

@@ -1,6 +1,7 @@
 package com.diseno.pool;
 
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,11 @@ public class inputForm extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button buttonChisme = findViewById(R.id.buttonChisme);
+        Button buttonAnecdota = findViewById(R.id.buttonAnecdota);
+        Button buttonConfesion = findViewById(R.id.buttonConfesion);
+
+        //buttonChisme.setBackgroundColor();
     }
 }

@@ -81,10 +81,10 @@ public class registroUser extends AppCompatActivity {
                                                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                                         @Override
                                                         public void onSuccess(DocumentReference documentReference) {
-                                                            Toast.makeText(registroUser.this, "Usuario registrado.", Toast.LENGTH_SHORT).show();
-//                                                            Intent intent = new Intent(registroUser.this, WelcomeScreen.class);
-//                                                            startActivity(intent);
-//                                                            finish();
+                                                            //Toast.makeText(registroUser.this, "Usuario registrado.", Toast.LENGTH_SHORT).show();
+                                                            Intent intent = new Intent(registroUser.this, inputForm.class);
+                                                            startActivity(intent);
+                                                            finish();
                                                         }
                                                     })
                                                     .addOnFailureListener(new OnFailureListener() {

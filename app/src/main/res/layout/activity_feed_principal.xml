@@ -17,37 +17,44 @@
 
         <ImageView
             android:id="@+id/logoImageView"
-            android:layout_width="281dp"
+            android:layout_width="0dp"
             android:layout_height="74dp"
             android:background="#fff"
             android:paddingVertical="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.012"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/logopool" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/contentRecyclerView"
             android:layout_width="410dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logoImageView"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/addMorebtn"
             android:layout_width="66dp"
             android:layout_height="66dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingHorizontal="10dp"
             android:text="+"
             android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/contentRecyclerView"
+            app:cornerRadius="1000dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/logoImageView"
+            app:layout_constraintHorizontal_bias="0.901"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
+            app:layout_constraintVertical_bias="0.948" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

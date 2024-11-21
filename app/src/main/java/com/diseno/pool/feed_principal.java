@@ -2,8 +2,11 @@ package com.diseno.pool;
 
 import static android.content.ContentValues.TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -38,6 +41,7 @@ public class feed_principal extends AppCompatActivity {
         });
         List<Chisme> chismeList = new ArrayList<>();
         RecyclerView rv =findViewById(R.id.contentRecyclerView);
+        Button addMore = findViewById(R.id.addMorebtn);
         rv.setLayoutManager(new LinearLayoutManager(this));
         db.collection("Chismes")
                 .get()
@@ -57,5 +61,14 @@ public class feed_principal extends AppCompatActivity {
                         }
                     }
                 });
+
+        addMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(feed_principal.this, inputForm.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
